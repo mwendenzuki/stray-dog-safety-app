@@ -1,0 +1,53 @@
+/* MapScreen.css */
+@import url('https://unpkg.com/leaflet@1.7.1/dist/leaflet.css');
+
+/* Make sure the map container has a height */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+/* Custom marker styling */
+.custom-marker {
+  background: transparent;
+  border: none;
+}
+
+/* Override zIndex for controls to be above popup */
+.leaflet-control {
+  z-index: 800 !important;
+}
+
+/* Make popup prettier */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+
+/* Animation for markers when they appear */
+@keyframes marker-bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+.marker-enter {
+  animation: marker-bounce 0.5s ease;
+}
+
+/* Animation for popup when it appears */
+@keyframes popup-fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.popup-enter {
+  animation: popup-fade-in 0.3s ease-out forwards;
+}
