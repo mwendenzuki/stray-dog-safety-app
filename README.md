@@ -6,11 +6,11 @@ The project is a mobile-friendly web application designed for reporting stray do
 
 ## Deployment link
 
-🔗:
+🔗: https://stray-dog-safety-app.netlify.app/
 
 # 🎤 Pitchdeck
 
-🔗:
+🔗: https://www.canva.com/design/DAGl3LFYSD0/iZ_Tn8oJSPBoqe4a6X7yDQ/edit?utm_content=DAGl3LFYSD0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
 # 🚀 Project Description
 
